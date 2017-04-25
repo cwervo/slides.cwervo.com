@@ -4,15 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>reveal.js</title>
+        <title>VR Capstone</title>
 
         <link rel="stylesheet" href="css/reveal.css">
-        <!-- <link rel="stylesheet" href="css/theme/black.css"> -->
-        <link rel="stylesheet" href="css/theme/night.css">
+        <link rel="stylesheet" href="css/theme/black.css">
+        <!-- <link rel="stylesheet" href="css/theme/night.css"> -->
 
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/0.96/head.min.js"></script>
         <!-- Printing and PDF exports -->
         <script>
             var link = document.createElement( 'link' );
@@ -25,40 +26,104 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
     <body>
         <div class="reveal">
             <div class="slides">
-                <section>
-                    <h3> What Are We Doing Here? </h3>
-                    <ol>
-                        <li>A (Brief) History of Interactive Storytelling</li>
-                        <li>What Is Virtual Reality?</li>
-                        <li>So, What Did I Do?</li>
-                        <li>Conclusion</li>
-                        <li>Questions</li>
-                    </ol>
+                <section data-markdown>
+                    ### Imagine Trees Like These
+                    <p>
+                    A Creative Writing capstone project by
+                    <br>
+                    Andres Cuervo
+                    <br>
+                    Advisor: Sylvia Watanabe
+                    </p>
                 </section>
 
-                <section>
-                    <h6>A (Brief) History of Interactive Storytelling</h6>
+                <section data-markdown data-background-color="white">
+                    <script type="text/template">
+                        ### What Are We Doing Here?
+                        - A (Brief) History of Interactive Storytelling <!-- .element: style="color: #2EAFAC" -->
+                        - What Is Virtual Reality? <!-- .element: style="color: #BBB" -->
+                        - So, What Did I Do? <!-- .element: style="color: #BBB" -->
+                        - Conclusion <!-- .element: style="color: #BBB" -->
+                        - Questions <!-- .element: style="color: #BBB" -->
+                    </script>
+                </section>
 
-                    <section>
-                        <img
-                        src="/assets/images/capstone/popup-books.png"
-                        alt="Image of a selection of children's pop up books.">
-                        <h3> Pop-up books </h3>
-                    </section>
+                <section data-markdown data-separator-notes="^Note:">
+                    ## What qualifies as interactive storytelling?
 
-                    <section>
-                        <img
-                        src="/assets/images/capstone/choose-your-own-book.png"
-                        alt="Image of a selection of choose-your-own-adventure books">
-                        <h3> Choose-your-own adventure books </h3>
-                    </section>
+                    Note:
+                    - There are more rigorous histories of interactive storytelling
+                    - I chose to take inspiration from personally recognizable sources, like:
+                        - Books
+                        - Movies
+                        - video games
+                    - so let's explore those a bit.
+                </section>
 
-                    <section>
-                        <img
-                        src="/assets/images/capstone/text-based-games.png"
-                        alt="An image of many black computer monitors with white or green text, depicting ext-based adventure games">
-                        <h3> Text-based adventure games </h3>
-                    </section>
+                <section data-markdown data-separator-notes="^Note:">
+                    ### Pop-up books
+
+                    ![Image of a selection of children's pop up books.](/assets/images/capstone/popup-books.png)
+                </section>
+
+                <section data-markdown data-separator-notes="^Note:">
+                    ### Choose-your-own adventure books
+
+                    ![Image of a selection of choose-your-own-adventure books](/assets/images/capstone/choose-your-own-book.png)
+                </section>
+
+                <section data-markdown data-separator-notes="^Note:">
+                    ###  Text-based adventure games
+
+                    ![ An image of many black computer monitors with white or green text, depicting ext-based adventure games ](/assets/images/capstone/text-based-games.png)
+
+                    Note:
+                    - Getting a little more digital!
+                    - Finally have dynamic setup, allowing for things like custom user input (i.e. names)
+                </section>
+
+
+                <section data-markdown data-separator-notes="^Note:">
+                    <script type="text/template">
+                    ### Early video games
+
+                    ![Donkey Kong video game screen grab GIF](https://media.giphy.com/media/YFkhozsCUkpJm/giphy.gif) <!-- .element: class="fragment" data-fragment-index="2""-->
+                    ![Pokemon video game screen grab GIF](https://media.giphy.com/media/uv2pEsYaKjmj6/giphy.gif) <!-- .element: class="fragment" data-fragment-index="1""-->
+
+                    Note:
+                    - Introduced simple graphics
+                    - Advanced custom input (names, nicknames, time, scores)
+                    - Greater emphasis on individual interaction rather than cooperation (as opposed to MUDs)
+                    </script>
+                </section>
+
+                <section data-markdown data-separator-notes="^Note:">
+                    <script type="text/template">
+                    ### ~~Early~~ video games
+
+                    ![3D Mario game mushroom spinning GIF](https://media.giphy.com/media/3oz8xJEqVd9MQ1enBe/giphy.gif) <!-- .element: class="fragment" data-fragment-index="1" style="position: absolute; left: 20%;"-->
+                    ![Call of Duty cinematic GIF](https://media.giphy.com/media/OHJbZoMzUAxeo/giphy.gif) <!-- .element: class="fragment" data-fragment-index="2" style="position: absolute; left: 10%;"-->
+                    ![Leage of Legends gameplay GIF](https://media.giphy.com/media/13tsY9zEBndlMA/giphy.gif) <!-- .element: class="fragment" data-fragment-index="3" style="position: absolute; left: 30%; top: 150%;"-->
+
+                    Note:
+                    - To some extent the biggest transition for games has been 2D → 3D
+                    - This gives us more cinematic games (COD gif)
+                    - And more complicated, diverse types of gameplay (LoL gif)
+                    - But, ultimately, gameplay is still centered around a screen, which means it's limited to a single frame of reference
+                        - Not necessarily bad, but we're now able to look past single frame scenes with VR!!!
+                    </script>
+                </section>
+
+
+                <section data-markdown data-background-color="white">
+                    <script type="text/template">
+                        ### What Are We Doing Here?
+                        - A (Brief) History of Interactive Storytelling <!-- .element: style="color: #BBB" -->
+                        - What Is Virtual Reality? <!-- .element: style="color: #2EAFAC" -->
+                        - So, What Did I Do? <!-- .element: style="color: #BBB" -->
+                        - Conclusion <!-- .element: style="color: #BBB" -->
+                        - Questions <!-- .element: style="color: #BBB" -->
+                    </script>
                 </section>
 
                 <section>
