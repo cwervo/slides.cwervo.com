@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <!-- <link rel="stylesheet" href="css/theme/black.css"> -->
+        <link rel="stylesheet" href="css/theme/night.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h3> What Are We Doing Here? </h3>
+                    <ol>
+                        <li>A (Brief) History of Interactive Storytelling</li>
+                        <li>What Is Virtual Reality?</li>
+                        <li>So, What Did I Do?</li>
+                        <li>Conclusion</li>
+                        <li>Questions</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h6>A (Brief) History of Interactive Storytelling</h6>
+
+                    <section>
+                        <img
+                        src="/assets/images/capstone/popup-books.png"
+                        alt="Image of a selection of children's pop up books.">
+                        <h3> Pop-up books </h3>
+                    </section>
+
+                    <section>
+                        <img
+                        src="/assets/images/capstone/choose-your-own-book.png"
+                        alt="Image of a selection of choose-your-own-adventure books">
+                        <h3> Choose-your-own adventure books </h3>
+                    </section>
+
+                    <section>
+                        <img
+                        src="/assets/images/capstone/text-based-games.png"
+                        alt="An image of many black computer monitors with white or green text, depicting ext-based adventure games">
+                        <h3> Text-based adventure games </h3>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Capstone Scene</h2>
+                    <iframe
+                        width="100%" height="500px"
+                        src="http://vr.cwervo.com/scenes/vr-capstone.html"></iframe>
+                </section>
+
+                <section>
+                    <h2>360° Panorama</h2>
+                    <iframe
+                        width="100%" height="500px"
+                        src="http://vr.cwervo.com/panoramas/jasper-art/000008.html"></iframe>
+                </section>
+
+
+                <section>
+                    <h1> Fragment Slide </h1>
+                    <span class="fragment fade-in">
+                        <span class="fragment fade-out">I'll fade in, then out</span>
+                    </span>
+                </section>
+
+                <section>Slide 2</section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+    });
+        </script>
+    </body>
+</html>
