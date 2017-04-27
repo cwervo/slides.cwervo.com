@@ -12,19 +12,19 @@
 
 1. Go through my personal inspirations and considerations of interactive storytelling.
 2. Show a sphere being wrapped with a grid, and a 360 2d equirectangular image --> same image in A-Frame
-3. Why trees? Talk about abstract meaning, interaction model, 
+3. Why trees? Talk about abstract meaning, interaction model,
 4. Conclude?
 
 ---
 
-Isaac notes:
+(2017-04-26) Isaac notes:
 
-1. [ ] Reorder
+1. [x] Reorder
 - books are personal inspiration, text based games are weird because it's not personal to me
     - narrative (books) --> graphics is a weird transition, so talk about my inspiration _and then_ graphics/polygons/video games
     - popup books --> choose your own adventure --> Pokemon / another 3D video games
         - Then have a transition to history of video games, text-based narratives, graphics go up, etc.
-    - This image is wild, switch to be:
+    - [x] This image is wild, switch to be:
         - picture -> sphere GIF -> image
 
 2. [x] Earth instead of Jasper (already have the image somewhere! Although maybe you should probably get a single-color one)
@@ -49,3 +49,7 @@ environmentally & emotionally functional?
 what's the specific use of environment in the 1960's art group? you say it's specific, but you don't specify
 
 switch with Sam or Alex in my section
+
+-- 2017-04-27 notes: ---
+
+Fix 360° http://localhost:8000/capstone.html#/10 title
