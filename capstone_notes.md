@@ -53,3 +53,14 @@ switch with Sam or Alex in my section
 -- 2017-04-27 notes: ---
 
 Fix 360° http://localhost:8000/capstone.html#/10 title
+
+---
+
+(2017-04-27) Sage notes:
+
+- would be interested in hearing how I think the audience would react, or interact with it?
+- Have to take 30 seconds or a minute to explain state
+- I should have the interactive history bit on one slide changing all at once, which could give a couple minutes for me back to
+    - explain the interaction of the thing.
+    - The interactivity of moving your head is the novel piece, maybe discuss how it's even closer to a pop-up book lol
+- Answer "how is this creative writing?"
