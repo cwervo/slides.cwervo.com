@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <!-- <link rel="stylesheet" href="css/theme/black.css"> -->
+        <link rel="stylesheet" href="css/theme/night.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown>
+                    <script type="text/template">
+                        ##  Virtual Reality on the Web Using A-Frame
+                        #### ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+
+                        December 6, 2017 | [Waffle.js](https://wafflejs.com/) | [Andres Cuervo](https://cwervo.com)
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### What is A-Frame?
+
+                        - A wrapper around [the webVR API](https://developer.mozilla.org/en-US/docs/Web/API/WebVR_API)
+                            - The what? <!-- .element: class="fragment" data-fragment-index="1" -->
+                            - The WebVR API is experimental but useful <!-- .element: class="fragment" data-fragment-index="2" -->
+                            - Not very convenient, so in comes A-Frame! <!-- .element: class="fragment" data-fragment-index="3" -->
+                        - A reusable, extensible system for creating VR scenes on the web  <!-- .element: class="fragment" data-fragment-index="4" -->
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### Browser support
+
+                        ![beep](/assets/images/waffle-js-12-06-2017/browsers.png)
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### A-Frame "Hello World"
+
+                        - Available at http://aframe.glitch.me
+                        - Custom-component like syntax (just HTML!)
+
+                        ![Hello World code](/assets/images/waffle-js-12-06-2017/hello_world_code.png)
+                        ![beep](/assets/images/waffle-js-12-06-2017/hello_world_example.gif) <!-- .element: class="fragment" style="position: absolute; bottom: 0; left: 15%"-->
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### Extensible &amp; Reusable
+
+                        - You can write components as easily as:
+
+                        ```js
+                        AFRAME.registerComponent('foo', {
+                            init: function () {
+                                console.log("init!")
+                            },
+                            tick: function (t) {
+                                this.el.object3D.scale.addScalar(Math.cos(Math.floor(t) / 120) * 0.025)
+                            }
+                        })
+                        ```
+
+
+                        ```html
+                        <a-scene>
+                            <a-box foo material="color: #DAD;"></a-box>
+                            <a-sky color="#2EAFAC"></a-sky>
+                        </a-scene>
+                        ```
+
+                        ![beep](/assets/images/waffle-js-12-06-2017/scaleCube.gif) <!-- .element: class="fragment" style="position: absolute; bottom: 0; left: 25%"; width: 50%; -->
+                    </script>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        ### Experiment 1 by Name 1
+                        ![beep](/assets/images/waffle-js-12-06-2017/scaleCube.gif)
+                    </section>
+                    <section data-markdown>
+                        ### Experiment 2 by Name 2
+                        ![beep](/assets/images/waffle-js-12-06-2017/hello_world_example.gif)
+                    </section>
+                    <section data-markdown>
+                        ### 10 Print Pattern by Andres Cuervo
+                        ![beep](/assets/images/waffle-js-12-06-2017/rainbow_10_print.gif)
+                    </section>
+                    <section data-markdown>
+                        ## The Futureeee
+                        ### WebAR with A-Frame
+                        ![beep](/assets/images/waffle-js-12-06-2017/phone_ar_gifs_experiment.gif)
+                    </section>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        # Thanks!
+
+                        - ### [cwervo.com](https://cwervo.com)
+                        - ### [slides.cwervo.com](https://slides.cwervo.com)
+                    </script>
+                </section>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+    });
+        </script>
+    </body>
+</html>
