@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>reveal.js</title>
+        <title>A-Frame Waffle.JS Talk 12/6/17</title>
 
         <link rel="stylesheet" href="css/reveal.css">
         <!-- <link rel="stylesheet" href="css/theme/black.css"> -->
@@ -39,10 +39,11 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                         ### What is A-Frame?
 
                         - A wrapper around [the webVR API](https://developer.mozilla.org/en-US/docs/Web/API/WebVR_API)
-                            - The what? <!-- .element: class="fragment" data-fragment-index="1" -->
                             - The WebVR API is experimental but useful <!-- .element: class="fragment" data-fragment-index="2" -->
                             - Not very convenient, so in comes A-Frame! <!-- .element: class="fragment" data-fragment-index="3" -->
-                        - A reusable, extensible system for creating VR scenes on the web  <!-- .element: class="fragment" data-fragment-index="4" -->
+                                - Multi-platform <!-- .element: class="fragment" data-fragment-index="4" -->
+                                - Entity Component System <!-- .element: class="fragment" data-fragment-index="5" -->
+                        - A reusable, extensible system for creating VR scenes on the web  <!-- .element: class="fragment" data-fragment-index="6" -->
                     </script>
                 </section>
 
@@ -96,21 +97,70 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                 </section>
 
                 <section>
+                    <section  data-markdown>
+                        ### A quick note : The Inspector!
+
+                        ![GIF demonstrating the A-Frame inspector moving around scenes in the "Hello World" scene](/assets/images/waffle-js-12-06-2017/inspector.gif)
+                    </section>
+                </section>
+
+                <section>
                     <section data-markdown>
-                        ### Experiment 1 by Name 1
-                        ![beep](/assets/images/waffle-js-12-06-2017/scaleCube.gif)
+                        ### The Component Ecosystem 
+                        #### 🌺  🌹 🍄
+
+                        - It's why I stay!
+                        - There's [the A-Frame Registry](https://aframe.io/aframe-registry/)
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        ### [Physics](https://github.com/donmccurdy/aframe-physics-system) from Don McCurdy
+                        ![beep](/assets/images/waffle-js-12-06-2017/physics_demo.gif)
                     </section>
                     <section data-markdown>
-                        ### Experiment 2 by Name 2
-                        ![beep](/assets/images/waffle-js-12-06-2017/hello_world_example.gif)
+                        ### [Dat.gui VR](https://github.com/dataarts/dat.guiVR) from the Google Data Arts team
+                        ![beep](/assets/images/waffle-js-12-06-2017/dat-gui-vr.gif)
                     </section>
                     <section data-markdown>
-                        ### 10 Print Pattern by Andres Cuervo
+                        ### [Animation](https://github.com/ngokevin/kframe/tree/master/components/animation/) from Kevin Ngo
+                        ![beep](/assets/images/waffle-js-12-06-2017/anim_component.gif)
+                    </section>
+                    <section data-markdown>
+                        ### [Environments](https://github.com/feiss/aframe-environment-component) from Diego F. Goberna
+                        ![beep](/assets/images/waffle-js-12-06-2017/aframe_environment.gif)
+                    </section>
+                    <section data-markdown>
+                        ### [Particles](https://github.com/IdeaSpaceVR/aframe-particle-system-component) from Idea Space VR
+                        ![beep](/assets/images/waffle-js-12-06-2017/particles.gif)
+                    </section>
+                    <section data-markdown>
+                        ### [Raytrace](https://github.com/omgitsraven/aframe-raytrace-component) from omgitsraven
+                        ![beep](/assets/images/waffle-js-12-06-2017/raytrace.gif)
+                    </section>
+                    <section data-markdown>
+                        ### [Super Hands](https://github.com/wmurphyrd/aframe-super-hands-component) from Will Murphy
+                        ![beep](/assets/images/waffle-js-12-06-2017/super-hands-demo.gif)
+                    </section>
+                    <section data-markdown>
+                        ### [UI Widgets](https://github.com/caseyyee/aframe-ui-widgets) from Casey Yee
+                        ![beep](/assets/images/waffle-js-12-06-2017/aframe_ui_widgets.gif)
+                    </section>
+                    <section data-markdown>
+                        ### [Text Geometry](https://github.com/ngokevin/kframe/tree/master/components/text-geometry/) from Kevin Ngo
+                        ![beep](/assets/images/waffle-js-12-06-2017/text_geometry.png)
+                    </section>
+                    <section data-markdown>
+                        ### 10 Print Pattern from Andres Cuervo
                         ![beep](/assets/images/waffle-js-12-06-2017/rainbow_10_print.gif)
                     </section>
                     <section data-markdown>
                         ## The Futureeee
-                        ### WebAR with A-Frame
+
+                        -  1.0
+                        - WebAR with A-Frame
+
                         ![beep](/assets/images/waffle-js-12-06-2017/phone_ar_gifs_experiment.gif)
                     </section>
                 </section>
@@ -119,8 +169,13 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                     <script type="text/template">
                         # Thanks!
 
-                        - ### [cwervo.com](https://cwervo.com)
-                        - ### [slides.cwervo.com](https://slides.cwervo.com)
+                        - ### @acwervo <!-- .element:  style="font-family: monospace;" -->
+                        - ### [cwervo.com](https://cwervo.com) <!-- .element:  style="font-family: monospace;" -->
+                        - ### [slides.cwervo.com](https://slides.cwervo.com) <!-- .element:  style="font-family: monospace;" -->
+
+                        ---
+
+                        - ##### [Join the A-Frame Slack group!](https://aframevr-slack.herokuapp.com/)
                     </script>
                 </section>
         </div>
