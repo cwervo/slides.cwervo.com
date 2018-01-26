@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>_ideas.key</title>
+
+        <link rel="stylesheet" href="../css/reveal.css">
+        <!-- <link rel="stylesheet" href="css/theme/black.css"> -->
+        <link rel="stylesheet" href="../css/theme/night.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="../lib/css/zenburn.css">
+
+        <style>
+            .slides {
+                overflow: scroll !important;
+            }
+        </style>
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown data-notes="Notes ... !">
+                    <script type="text/template">
+                        ### some ideas, a beginning (2018-01-25)
+
+                        - Some responses to the ideas brought up [here in Gary's Desconstruct talk on picking a talk topic](https://www.deconstructconf.com/blog/how-to-choose-a-talk-topic)
+                        - (_and, hopefully, this becomes a fruitful place where I write down other talk ideas_)
+                        - Ideas in the next slides .... ➡️
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ###### Pairs or triples of tools/ideas/practices that people rarely use together, but have worked very well together for you.
+                        - comics &amp; augmented reality
+                        - music &amp; virtual reality
+                        - vim &amp; well, everything ... text as the root of code is not the end but can be powerful!
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ###### None of the other prompts were appealing to me, so here's some talks scraped from my Evernote &amp; Todoist that live here now ...
+
+                        - A tour of AR on the web!
+                        - Talk about early web AR experiments ()
+                        - [We Are Autobots AR website (2009! Flash!)](http://www.slashfilm.com/paramount-launches-augmented-reality-website-to-promote-transformers-2/)
+                        - Face tacking but also used Bumblebee as a marker!
+                        - [Yelp's AR Monocle](https://www.engadget.com/2009/08/27/yelp-for-iphones-hidden-augmented-reality-feature/), not web-based but still one of the first iOS apps!
+                        - Go through ARToolkit's history &amp; porting to AR.js! :)
+                        - Talk about face-based JS trackers (clmrtracker, others?)
+                        - [Google's AR experiments](https://experiments.withgoogle.com/ar)
+                        - Finally talk about Google's three.ar.js &amp; Mozilla's web XR polyfil, &amp; the coming VR extensions webXR api !
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ###### FP (Clojure) &amp; WebVR
+
+                        - how functional languages &amp;amp; hot-reloading webVR is lovely &amp; how I did it lol
+                    </script>
+                </section>
+            </div>
+        </div>
+
+        <script src="../lib/js/head.min.js"></script>
+        <script src="../js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+    history: true,
+
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+        { src: '../plugin/markdown/marked.js' },
+        { src: '../plugin/markdown/markdown.js' },
+        { src: '../plugin/notes/notes.js', async: true },
+        { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
+});
+        </script>
+    </body>
+</html>
