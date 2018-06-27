@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Talk by Andr&eacute;s Cuervo</title>
+
+        <link rel="stylesheet" href="../css/reveal.css">
+        <!-- <link rel="stylesheet" href="css/theme/black.css"> -->
+        <link rel="stylesheet" href="../css/theme/night.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="../lib/css/zenburn.css">
+
+        <style>
+            .slides {
+                /* overflow: scroll !important; */
+            }
+        </style>
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown data-notes="Notes ... !">
+                    <script type="text/template">
+                        ### Title!
+
+                        [&lt;venue name + link&gt;]() - Month 01, 2018
+
+                        [Andr&eacute;s Cuervo](https://cwervo.com)
+
+                        - Note : Change the `<title>` for this page // Also delete this note lol
+                    </script>
+                </section>
+            <section data-markdown>
+                <script>
+                    ### First slide
+
+                    - Yay!
+                </script>
+            </section>
+
+            <section data-markdown>
+                <script type="text/template">
+                    # Thanks!
+
+                    - ### [@acwervo](https://twitter.com/acwervo) on Twitter <!-- .element:  style="font-family: monospace;" -->
+                    - ### [cwervo.com](https://cwervo.com) <!-- .element:  style="font-family: monospace;" -->
+                    - ### [slides.cwervo.com](https://slides.cwervo.com) <!-- .element:  style="font-family: monospace;" -->
+                </script>
+            </section>
+            </div>
+        </div>
+
+        <script src="../lib/js/head.min.js"></script>
+        <script src="../js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+    history: true,
+
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+        { src: '../plugin/markdown/marked.js' },
+        { src: '../plugin/markdown/markdown.js' },
+        { src: '../plugin/notes/notes.js', async: true },
+        { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
+});
+        </script>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>WebXR + Financial Accessibility | Andr&eacute;s Cuervo</title>
+
+        <link rel="stylesheet" href="../css/reveal.css">
+        <!-- <link rel="stylesheet" href="css/theme/black.css"> -->
+        <link rel="stylesheet" href="../css/theme/night.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="../lib/css/zenburn.css">
+
+        <style>
+            .slides {
+                /* overflow: scroll !important; */
+            }
+        </style>
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown data-notes="Notes ... !">
+                    <script type="text/template">
+                        ### AR/VR/XR &amp; Financial Accessbility
+
+                        [The intersectional tech meetup](https://the-intersectional-tech-meetup.glitch.me/) - June 28, 2018
+
+                        [Andr&eacute;s Cuervo](https://cwervo.com)
+                    </script>
+                </section>
+            <section data-markdown>
+                <script>
+                    ### What's XR? (term #1)
+
+                    ![The XR spectrum diagram, from reality to virtual reality](assets/xr_spectrum.jpg)
+                </script>
+            </section>
+
+
+            <section data-markdown>
+                <script>
+                    ### Some stats:
+                    - By 2019 &gt; 5 billion people will have smart phones, nearly 63% of the earth ([source](https://www.statista.com/statistics/274774/forecast-of-mobile-phone-users-worldwide/))
+                    - In last couple years only 9 million VR headsets - 0.12% of the global population ([source](https://www.statista.com/statistics/671403/global-virtual-reality-device-shipments-by-vendor/))
+                </script>
+            </section>
+
+
+            <section data-markdown>
+                <script>
+                    ### Progressive enhancement (term #2)
+                    - "Progressive enhancement is a design philosophy that centers around providing a baseline of essential content and functionality to as many users as possible, while at the same time going further and delivering the best possible experience only to users of the most modern browsers that can run all the required code."
+                        - [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement)
+                </script>
+            </section>
+
+            <section data-markdown>
+                <script>
+                    #### What could this look like?
+                    ![](assets/overlay-header-1.png)
+                    - [_Progressive WebXR_](https://blog.mozvr.com/progressive-webxr-ar-store/)
+                </script>
+            </section>
+
+            <section data-markdown> <script>
+                    ### What devices could users access our content with?
+                    ![](assets/spectrum2.png)
+                </script>
+            </section>
+
+
+            <section data-markdown> <script>
+                    ### Desktop/mobile
+                    ![](assets/desktop-ff-1.gif)
+                </script>
+            </section>
+
+            <section data-markdown> <script>
+                    ### AR headsets/phones
+                    ![](assets/AR-1.gif)
+                </script>
+            </section>
+
+            <section data-markdown> <script>
+                    ### Full VR
+                    ![](assets/6dof-1.gif)
+                </script>
+            </section>
+
+
+            <section data-markdown> <script>
+                    ### Why?
+                    - XR technology is immersive &amp; powerful
+                    - But full-powered VR or AR is currently expensive &amp; niche
+                    - We can allow people to access 3D content with whatever they currently have, so we should aim to in order to expand accessibility!
+                </script>
+            </section>
+
+            <section data-markdown>
+                <script>
+                    ### Some more resources
+                    - [The Mozilla blog post we went through](https://blog.mozvr.com/progressive-webxr-ar-store/)
+                    - [Another blog post on building a progressively enhanced XR painting app](https://blog.mozvr.com/responsive-webxr-a-painter-xr/)
+                    - [Three.ar.js by Google, another mobile WebXR implentation to play around with](https://github.com/google-ar/three.ar.js)
+                    - [MDN on progressive enhancement](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement)
+                </script>
+            </section>
+
+            <section data-markdown>
+                <script type="text/template">
+                    # Thanks!
+
+                    - ### [@acwervo](https://twitter.com/acwervo) on Twitter <!-- .element:  style="font-family: monospace;" -->
+                    - ### [cwervo.com](https://cwervo.com) <!-- .element:  style="font-family: monospace;" -->
+                    - ### [slides.cwervo.com](https://slides.cwervo.com) <!-- .element:  style="font-family: monospace;" -->
+                </script>
+            </section>
+            </div>
+        </div>
+
+        <script src="../lib/js/head.min.js"></script>
+        <script src="../js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+    history: true,
+
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+        { src: '../plugin/markdown/marked.js' },
+        { src: '../plugin/markdown/markdown.js' },
+        { src: '../plugin/notes/notes.js', async: true },
+        { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
+});
+        </script>
+    </body>
+</html>
