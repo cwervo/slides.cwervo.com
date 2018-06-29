@@ -29,9 +29,16 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                 color: purple;
             }
 
-            .slides {
+            [role="application"] {
+                font-size: 1.8em;
                 width: 100%;
                 overflow-y: auto !important;
+            }
+
+            @media (max-width: 500px) {
+                [role="application"] {
+                    font-size: 3em;
+                }
             }
         </style>
     </head>
@@ -43,9 +50,9 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
                     #### **2018**
 
-                    - [The intersectional tech meetup](/intersectional-tech-2018/index.html) on why progressive enhacement in XR is the responsibe, finanicially accessible way to approach emerging tech like XR (June 28, 2018)
-                    - [School of Machines, Making &amp; Make-Believe](school-of-maaa-June-08-2018/index.html) on my AR artwork &amp; ideas for making your own work! (June 08, 2018)
-                    - [SF Tech Poetics](/tech-poetics-feb-2018/index.html) on AR comics &amp; the future of AR (February 14, 2018)
+                    - [My talk "XR &amp; Financial Accessibility"](/intersectional-tech-2018/index.html) for [the intersectional tech meetup](https://the-intersectional-tech-meetup.glitch.me/) on why progressive enhacement in XR is the responsibe, finanicially accessible way to approach emerging tech like VR/AR/XR. (June 28, 2018)
+                    - ["A Small Collection of My AR Art - And So Can You!"](school-of-maaa-June-08-2018/index.html) given to students in an AR class at the [School of Machines, Making &amp; Make-Believe](http://schoolofma.org/) on my AR artwork &amp; ideas for making your own work! (June 08, 2018)
+                    - [My talk on "AR Comics &amp; The Future of Augmented Art"](/tech-poetics-feb-2018/index.html) for [SF Tech Poetics](https://www.facebook.com/SF-Tech-Poetics-1234662803267437/) on AR comics &amp; the future of AR (February 14, 2018)
 
                     #### **2017**
                     - [My talk about my #ARctober 2017 experiments](/arctober-2017-mozilla.html) at Mozilla SF (December 18, 2017) for the [WebVR/AR Monthly Meetup Group](https://www.meetup.com/WebVR-AR-Monthly/)
