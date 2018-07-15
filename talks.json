@@ -1,0 +1,46 @@
+{
+    "2018" : {
+        "XR & Financial Accessibility" : {
+            "url": "./intersectional-tech-2018/index.html",
+            "date": "June 28",
+            "description": "A talk at [the intersectional tech meetup](https://the-intersectional-tech-meetup.glitch.me/) on why progressive enhacement in XR is the responsibe, finanicially accessible way to approach emerging tech like VR/AR/XR."
+        },
+        "A Small Collection of My AR Art - And So Can You!" : {
+            "url": "school-of-maaa-June-08-2018/index.html",
+            "date": "June 08",
+            "description": "A talk given to students in an AR class at the [School of Machines, Making & Make-Believe](http://schoolofma.org/) on my AR artwork & ideas for making your own work!"
+        },
+        "Game Feel: Beyond Pictures Under Glass": {
+            "url": "https://drive.google.com/open?id=1LlJ3Gz2cNVnAREmfRivTxcWN3GITPO1L",
+            "date": "April 27",
+            "description": "A talk given at [Creative Mornings Oakland](https://creativemornings.com/cities/oak) on games, language, creativity, & the how the future of computing can facilitate all of that!",
+            "videoUrl": "https://www.youtube.com/watch?v=f5g86AS8pug"
+        },
+        "AR Comics & The Future of Augmented Art": {
+            "url": "./tech-poetics-feb-2018/index.html",
+            "date": "February 14",
+            "description": "A talk given at [SF Tech Poetics](https://www.facebook.com/SF-Tech-Poetics-1234662803267437/) on AR comics & the future of AR."
+        }
+    },
+    "2017" : {
+        "#ARctober" : {
+            "url": "./arctober-2017-mozilla.html",
+            "date": "December 18",
+            "description": "A talk about my #ARctober 2017 experiments at Mozilla SF for the [WebVR/AR Monthly Meetup Group](https://www.meetup.com/WebVR-AR-Monthly/)",
+            "writeUpUrl": "https://medium.com/@cwervo/arctober-11da399199be",
+            "videoUrl": "https://www.youtube.com/watch?v=xSdX9hsUTNQ"
+        },
+        "Virtual Reality on the Web Using A-Frame" : {
+            "url": "./wafflejs-aframe-react.html",
+            "date": "December 06",
+            "description": "My talk at [Waffle.js](https://wafflejs.com/) about the A-Frame webVR framework.",
+            "videoUrl": "https://www.youtube.com/watch?v=abGJGj71Rt8"
+        },
+        "Imagine Trees Like These" : {
+            "url": "./capstone.html",
+            "date": "April 28",
+            "description": "My Oberlin Senior creative writing Capstone (a VR narrative!)",
+            "videoUrl": "https://www.youtube.com/watch?v=Ca6quGC_hUk"
+        }
+    }
+}
