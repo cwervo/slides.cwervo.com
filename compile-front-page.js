@@ -60,7 +60,7 @@ body {
     padding: 1% 10%;
 
     color: white;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -82,7 +82,6 @@ body {
 .talk-date {
     margin-top: 0.5em;
 }
-
 
 ul {
     padding-left: 4%;
