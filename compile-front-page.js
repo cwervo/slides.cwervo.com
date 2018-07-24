@@ -59,7 +59,7 @@ body {
     background-color: #2EAFAC;
     padding: 1% 10%;
 
-    color: white;
+    color: black;
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
 }
@@ -85,14 +85,6 @@ body {
 
 ul {
     padding-left: 4%;
-}
-
-a {
-color: peachpuff;
-}
-
-a:visited {
-color: purple;
 }
 
 </style>

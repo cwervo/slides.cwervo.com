@@ -4,7 +4,7 @@ This is a little collection of my slides using [Reveal.js](https://github.com/ha
 
 Download all the dependencies by running:
 ```
-npm install
+yarn install
 ```
 
 All you should need is a local server.
@@ -12,5 +12,5 @@ All you should need is a local server.
 The main page, though, is generated using [showdown](https://github.com/AndresCuervo/slides.cwervo.com) from `a talks.json`, and is compiled using this command:
 
 ```bash
-npm fp # stands for "front page"
+yarn fp # stands for "front page"
 ```
