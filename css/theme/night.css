@@ -16,7 +16,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 40px;
   font-weight: normal;
-  color: #eee; }
+  color: black; }
 
 ::selection {
   color: #fff;
@@ -43,7 +43,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #eee;
+  color: black;
   font-family: "Montserrat", Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
@@ -209,8 +209,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #e7ad52;
-  text-decoration: none;
+  /* text-decoration: none; */
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
@@ -230,8 +229,10 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #eee;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+  /* border: 4px solid #eee; */
+  border: none;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); */
+  }
 
 .reveal section img.plain {
   border: 0;

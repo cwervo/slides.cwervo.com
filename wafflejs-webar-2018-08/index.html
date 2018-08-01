@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>AR Art on the Web Using Wasm</title>
+
+        <link rel="stylesheet" href="../css/reveal.css">
+        <!-- <link rel="stylesheet" href="css/theme/black.css"> -->
+        <link rel="stylesheet" href="../css/theme/night.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="../lib/css/zenburn.css">
+
+        <style>
+            .slides {
+                /* overflow: scroll !important; */
+            }
+
+            .small-images img {
+                max-width: 50%;
+                float: left;
+            }
+
+            .small-images-vertical img {
+                max-width: 50%;
+            }
+        </style>
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown data-notes="Notes ... !">
+                    <script type="text/template">
+                        ### AR Art on the Web Using Wasm
+
+                        [Waffle.js](https://wafflejs.com/) - August 01, 2018
+
+                        [Andr&eacute;s Cuervo](https://cwervo.com)
+                    </script>
+                </section>
+            <section data-markdown>
+                <script>
+                    ### AR art?
+                </script>
+            </section>
+
+            <section>
+                <h4> "AR Art on the Web Using Wasm"</h4>
+
+            <section data-markdown>
+                <script>
+                    - AR
+                        - Rendered with WebGL via Three.js
+                        - Using ARKit via WebARonARKit
+
+
+                    <!-- ![](assets/threejs.gif) -->
+                    ![](assets/WebARonARKit1.gif)
+                    ![](assets/WebARonARKit2.gif)
+
+                </script>
+            </section>
+            <section data-markdown>
+                <script>
+                    - Art
+                        - ...
+                </script>
+            </section>
+
+            <section data-markdown>
+                <script>
+                    - on the Web
+                        - Using Javascript!
+                    - using Wasm
+                        - Okay, there's some Rust in here too, via WebAssembly
+                </script>
+            </section>
+            </section>
+
+            <section>
+                <h4>Immersive Web &amp; WebXR</h4>
+            <section data-markdown>
+                <script>
+                    ##### Immersive Web Working Group
+
+                    ![](assets/immersive-web.png)
+
+                    [Immersive Web Working Group](https://www.w3.org/community/immersive-web/)
+                </script>
+            </section>
+
+            <section data-markdown>
+                <script>
+                    ##### WebXR API
+
+                    ![](assets/webxr-api.png)
+
+                    [WebXR Device API (formerly WebVR 1.0)](https://immersive-web.github.io/webxr/)
+                </script>
+            </section>
+
+
+            <section data-markdown>
+                <script>
+                    Very experimental implementations from:
+
+                    - [Mozilla]( https://blog.mozilla.org/blog/2017/10/20/bringing-mixed-reality-web/)
+                    - and [Google](https://github.com/google-ar/three.ar.js)
+
+                    ![](assets/moz-webxr.png)
+                    ![](assets/WebARonARKit2.gif)
+                </script>
+            </section>
+            </section>
+
+            <section data-markdown>
+                <script>
+                    ### [WebAssembly!](https://webassembly.org/)
+
+                    ![](assets/wasm.png)
+                </script>
+            </section>
+
+
+            <section>
+                <h4>The Art</h4>
+
+            <section data-markdown>
+                <script>
+                    ### Inspired by [this video](https://www.youtube.com/watch?v=UcdigVaIYAk) from Daniel Shiffman:
+
+                    ![](assets/shiffman_particles.gif)
+                </script>
+            </section>
+
+            <section data-markdown>
+                <script>
+                    ### A simple particle system
+
+                    ![](assets/threejs-particle-system.gif)
+
+                    [Three.js 3D Particles](https://threejs-3d-particles-example.glitch.me/)
+                </script>
+            </section>
+
+            <section data-markdown>
+                <script>
+                    ### 3D brushes!
+
+                    ![](assets/brush1.png)
+                    ![](assets/brush2.png)
+                    ![](assets/brush3.png)
+                    ![](assets/brush4.png)
+                </script>
+            </section>
+
+
+            <section data-markdown>
+                <script>
+                    ### JS Particle Brush
+
+                    ![](assets/particle_brush_js.gif)
+
+                    [👀 on Glitch](https://aframe-ar-playground.glitch.me/waffle-js-2018-08-simple-ar-brush/index.html)
+                </script>
+            </section>
+
+
+            <section data-markdown class="small-images">
+                <script>
+                    ### Add some Rust ...
+
+                    ![](assets/rust.png) ![](assets/rust_in_js.png)
+                </script>
+            </section>
+
+            <section data-markdown class="small-images-vertical">
+                <script>
+                    ### &amp; put it in your Javascript
+
+                    ![](assets/update_js.png)
+                    ![](assets/update_wasm.png)
+                </script>
+            </section>
+
+            <section data-markdown>
+                <script>
+                    ### Wasm Particle Brush
+
+                    ![](assets/particle_brush_js.gif)
+
+                    [👀 on Github](https://github.com/AndresCuervo/wasm-ar-brush)
+                </script>
+            </section>
+            </section>
+
+
+            <section data-markdown>
+                <script>
+                    ### So, why do this?
+
+                    ![](assets/particle_brush_js.gif)
+                </script>
+            </section>
+
+            <section data-markdown>
+                <script type="text/template">
+                    # Thanks!
+
+                    - ### [@acwervo](https://twitter.com/acwervo) on Twitter <!-- .element:  style="font-family: monospace;" -->
+                    - ### [cwervo.com](https://cwervo.com) <!-- .element:  style="font-family: monospace;" -->
+                    - ### [slides.cwervo.com](https://slides.cwervo.com) <!-- .element:  style="font-family: monospace;" -->
+                </script>
+            </section>
+            </div>
+        </div>
+
+        <script src="../lib/js/head.min.js"></script>
+        <script src="../js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+    history: true,
+
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+        { src: '../plugin/markdown/marked.js' },
+        { src: '../plugin/markdown/markdown.js' },
+        { src: '../plugin/notes/notes.js', async: true },
+        { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
+});
+        </script>
+    </body>
+</html>
