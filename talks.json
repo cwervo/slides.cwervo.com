@@ -1,5 +1,10 @@
 {
     "2018" : {
+        "AR Art on the Web Using Wasm" : {
+            "url": "./wafflejs-webar-2018-08/index.html",
+            "date": "August 1",
+            "description": "A talk combining AR using [three.ar.js](https://github.com/google-ar/three.ar.js) and Rust via [WebAssembly](http://webassembly.org) to create AR art."
+        },
         "XR & Financial Accessibility" : {
             "url": "./intersectional-tech-2018/index.html",
             "date": "June 28",
