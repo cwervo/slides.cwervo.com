@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "express": "^4.16.3",
+    "g": "^2.0.1",
     "grunt-cli": "~1.2.0",
     "mustache": "~2.2.1",
     "showdown": "^1.8.6",
@@ -41,6 +42,7 @@
     "grunt-retire": "^1.0.7",
     "grunt-sass": "^3.0.1",
     "grunt-zip": "~0.17.1",
+    "mdx-deck": "^1.5.10",
     "node-sass": "^4.9.2"
   },
   "license": "MIT"
