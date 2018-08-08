@@ -12,7 +12,7 @@ const BaseButton = styled.button`
 `
 
 function goFullscreen() {
-    document.body.requestFullscreen()
+    document.body.webkitRequestFullscreen()
 }
 
 document.body.addEventListener('keypress', event => {
