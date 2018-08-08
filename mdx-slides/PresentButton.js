@@ -11,8 +11,18 @@ const BaseButton = styled.button`
     font-size: 1em;
 `
 
+function goFullscreen() {
+    document.body.requestFullscreen()
+}
+
+document.body.addEventListener('keypress', event => {
+    if (event.key == "f") {
+        goFullscreen()
+    }
+})
+
 const PresentButton = () => (
-    <BaseButton onClick={e => document.body.requestFullscreen()}>present</BaseButton>
+<BaseButton onClick={e => goFullscreen()}>present</BaseButton>
 )
 
 export default PresentButton

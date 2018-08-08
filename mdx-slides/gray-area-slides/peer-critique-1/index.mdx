@@ -1,9 +1,9 @@
 export { default as theme } from '../../theme'
-import { Image, Appear } from 'mdx-deck'
+import { Image, Appear, Notes } from 'mdx-deck'
 import { SplitRight } from 'mdx-deck/layouts'
-import PresentButton from './PresentButton'
+import PresentButton from '../../PresentButton'
 
-# Lace
+# _Lace_
 ## Andr&eacute;s Cuervo
 
 <PresentButton/>
@@ -53,41 +53,67 @@ Ren&eacute; Magritte, _La Moisson_ (The Harvest) (1943)
 # What are your desired outcomes?
 
 
-We want the viewer/participant to feel/experience  _____________
+I want the viewer/participant to feel/experience:
+
+- a series of small interactions with technology.
+- as a guiding light, e.g.:
+    - drawing communally, with the computer as a fellow "participant"
+    - playing with information like a toy
+    - building with physical/digital tools seamlessly
 
 ---
 
 # Technology
 
-What technologies and code libraries did you use?
+- Javascript
+- Gesture recognition/CV:
+    - [TensorFlow.js](https://js.tensorflow.org/) (?)
+    - [GRAIL method](https://jackschaedler.github.io/handwriting-recognition/) (?)
+- Projector
+- Webcam
 
 ---
 
-# What are your resource needs, i.e. equipment, technology, people?
+# What are your resource needs?
+
+- Projector
+- Webcam
+- Whiteboard
+- Table
 
 ---
 
 # Timeline
 
+- **September 5**: Initial system built, running on a real projector, can interpret text & use that to control a simple turtle
+- **October 3**: 2 "toys"/experiences built (turtle + 1 more, whatever prototype seems more achievable initially)
+- **November 7**: Third "toy" prototyped & built
+- **December 1**: All experiences polished, have a mechanism for easily switching between toys & easily manage relationship b/w whiteboard/drawing & projector virtual state
+
 ---
 
 # What would success look like?
+
+An installation of _Lace_ that runs continously, smoothly, and that participants can just walk up to. Ideally mobile, installable in a room.
 
 ---
 
 # Challenges
 
+- computation scope
+- how to manage interaction b/w drawing & projection
 
-What Obstacles did you face and overcome?
+<!--
+- I don't want to build an entire operating system (yet), need to define my scope, with "toys" in mind, more narrowly so I don't spin my wheels
+- How to manage state between drawing surface & projection (e.g. what happens when I draw a turtle & then virtual turtle moves? Ask to erase? Mark in red?)
+-->
 
 ---
 
 # Question to the group
 
-
-What would you like to ask the group?
-
-Try not be too general (what did you like?) or too specific (do you think the costumes should be blue or red?)
+- Too ambitious?
+- Define experience first, or technical limits?
 
 ---
 # Thanks!

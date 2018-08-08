@@ -92,6 +92,12 @@ ul {
 <body>
 <h1 id="pageHeader"><a href="https://cwervo.com">Andr&eacute;s Cuervo</a>'s Talks</h1>
 ${html}
+
+<section>
+<span>Misc:</span>
+<a href="mdx-slides">mdx-slides</a>
+</section>
+
 </body>
 </html>
 `
