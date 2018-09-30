@@ -1,0 +1,182 @@
+export { default as theme } from '../../theme'
+import { Image, Appear, Notes } from 'mdx-deck'
+import { SplitRight } from 'mdx-deck/layouts'
+import PresentButton from '../../PresentButton'
+
+<!--
+
+Possible chronological ordering for presentation:
+- tinguely art piece
+- muriel cooper
+- Dynamicland
+- Chalktalk
+-->
+
+# _Lace_
+## Andr&eacute;s Cuervo
+
+<PresentButton/>
+
+---
+
+### 👋🏼 I'm Andrés Cuervo
+
+I'm an AR prototyper, HCI researcher, and artist.
+
+I've worked on VR narratives, art installations, & webAR, just to name a few projects.
+
+
+<img src="./assets/gif_collage.gif" style={{ display: "block", marginLeft: "auto", width: "70%", marginRight: "auto"
+}} alt="" />
+
+---
+
+#
+
+---
+
+# Thanks!
+
+- [cwervo.com](https://cwervo.com)
+- [slides.cwervo.com](https://slides.cwervo.com/mdx-slides/gray-area-slides/peer-critique-2/?mode=#0)
+
+---
+
+# ::::: OLD SLIDES AFTER THIS ::::
+
+---
+
+# Concept
+
+**_Lace_** is a piece that uses _projection mapping_ and _a custom gestural langauge_ to ~~express~~ imagine _a world where interacting with technology feels like play._
+
+How is it experienced?
+
+- Small scale: Leap Motion + projector + whiteboard/table
+- Large scale: room/building lined w/ short-throw projectors & whiteboard painted walls as screens
+
+---
+
+# What/who are your inspirations for this project?
+
+---
+
+## [Dynamicland/Realtalk](http://dynamicland.org)
+## [Chalktalk](https://github.com/kenperlin/chalktalk)
+![](https://media.giphy.com/media/l0HU19yAW0LLsUweY/giphy-downsized-large.gif) ![](assets/chalktalk_pendulum.gif)
+
+
+---
+
+John Tinguely, [_Homage to New York_](https://www.youtube.com/watch?v=0MqsWqBX4wQ) (1960)
+Muriel Cooper, _Information Landscapes_ (1994)
+
+
+![](https://media.giphy.com/media/WgO9M0riWRrI5EJZUB/giphy-downsized-large.gif)
+![](assets/information_landscapes.jpg)
+
+> ... this machine is a situation ...
+
+> "This stands as a sketch for the future." - [letter](http://www.dextersinister.org/MEDIA/PDF/Thisstandsasasketchforthefuture.pdf)
+
+<!--
+Ren&eacute; Magritte, _La Moisson_ (The Harvest) (1943)
+
+![](assets/la_moisson.png)
+-->
+
+---
+
+# Progress So Far
+
+---
+
+# Testing stuff out
+![](https://media.giphy.com/media/Bpp19qPzu7ArSmNwGN/giphy-downsized-large.gif)
+![](https://media.giphy.com/media/1xnylCqNk9OdC28Bmp/giphy.gif)
+
+---
+
+# More testing
+![](https://media.giphy.com/media/5k0321T7AEPgFFqbxC/giphy.gif)
+![](https://media.giphy.com/media/OSvikkHZjlRCTeBhHV/giphy-downsized-large.gif)
+
+---
+
+# Installation Ideas
+
+![](https://media.giphy.com/media/6EiJp6kdjIMtW4xZkb/giphy-downsized-large.gif)
+![](https://media.giphy.com/media/1qjwwmY9FVJ8XdKmso/giphy-downsized-large.gif)
+
+<hr />
+
+![](https://media.giphy.com/media/nyk2zUYa4UdVKSSju6/giphy-downsized-large.gif)
+![](https://media.giphy.com/media/AiSOyu7C801HzBU0Sc/giphy-downsized-large.gif)
+
+---
+
+# What are your desired outcomes?
+
+
+I want the viewer/participant to feel/experience:
+
+- a series of small interactions with technology
+- as a guiding light, e.g.:
+    - drawing communally, with the computer as a fellow "participant"
+    - playing with information like a toy
+    - building with physical/digital tools seamlessly
+
+---
+
+# Technology
+
+- Javascript
+- Gesture recognition/CV:
+    - Leap Motion
+    - [TensorFlow.js](https://js.tensorflow.org/) (?)
+    - [GRAIL method](https://jackschaedler.github.io/handwriting-recognition/) (?)
+- Projector
+- Webcam
+
+---
+
+# What are your resource needs?
+
+- Projector
+- Webcam
+- Table
+- Whiteboard (?)
+
+---
+
+# Timeline
+
+- **September 23**: Initial system built, running on a real projector, can interpret movement to control a simple object (a logo-like turtle?)
+- **October 3**: 2 "toys"/experiences built (turtle + drawing/saving image "post-it" notes)
+- **November 7**: Third "toy" prototyped & built (a website "from the future"?)
+- **December 1**: All experiences polished, have a mechanism for easily switching between experiences & easily manage relationship b/w drawing surface & projector virtual state
+
+---
+
+# What would success look like?
+
+An installation of _Lace_ with 3 examples that runs continously, smoothly, and that participants can just walk up to. Ideally mobile, installable in a room.
+
+---
+
+# Challenges
+
+- computation scope
+- how to manage interaction b/w drawing & projection
+
+<!--
+- I don't want to build an entire operating system (yet), need to define my scope, with "toys" in mind, more narrowly so I don't spin my wheels
+- How to manage state between drawing surface & projection (e.g. what happens when I draw a turtle & then virtual turtle moves? Ask to erase? Mark in red?)
+-->
+
+---
+
+# Question to the group
+
+- Too ambitious?
+- Define experience first, or technical limits?

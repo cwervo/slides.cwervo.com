@@ -43,7 +43,7 @@
     "grunt-retire": "^1.0.7",
     "grunt-sass": "^3.0.1",
     "grunt-zip": "~0.17.1",
-    "mdx-deck": "^1.5.10",
+    "mdx-deck": "^1.7.7",
     "node-sass": "^4.9.2"
   },
   "license": "MIT"
