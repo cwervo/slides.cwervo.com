@@ -1,5 +1,11 @@
 {
     "2018" : {
+        "Gray Area Incubator Artist Salon 2018.1" : {
+            "url": "./mdx-slides/gray-area-slides/artist-salon-2018-2/?mode=#0",
+            "date": "October 10",
+            "videoUrl": "https://www.youtube.com/watch?v=vRJwqOj6R0k",
+            "description": "A 10 minute presentation about my screenless AR, speculative design project: _Lace_, the project I worked on as a member of the Gray Area Arts Incubator."
+        },
         "AR Art on the Web Using Wasm" : {
             "url": "./wafflejs-webar-2018-08/index.html",
             "date": "August 1",
