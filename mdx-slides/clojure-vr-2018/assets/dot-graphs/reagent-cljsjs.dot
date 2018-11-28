@@ -1,0 +1,28 @@
+graph g {
+    bgcolor=transparent # RGBA (with alpha)
+        splines=true # use splines for edges, if needed to avoid overlap
+        overlap=scale # (try to) stretch everything if edges overlap
+
+        node [shape=circle,
+                fixedsize=true,
+                 width=2.5, # relative to the underlying coordinate grid?
+                 color="black", # node border color (X11 or HTML colors)
+                 fillcolor=white, # node fill color (X11 or HTML colors)
+                 style="filled,solid",
+                 fontcolor=black, # text color (X11 or HTML colors)
+                     fontname="helvetica",
+                     fontsize=20]
+
+                 edge [ penwidth=0.75, color=black ]
+
+                 // root
+                 /* root [label="Reagent", fillcolor="#D9BC71"] */
+                 root [label="Reagent"]
+                 reagentdetails [label="Reagent code", fillcolor="#00F999"]
+                 clojure [label="Clojure" fillcolor="#00F999"]
+                 cljsjsReagent [label="[cljsjs/react]\n[cljsjs/react-dom]\n..." fillcolor="#00F999"]
+
+                 root -- clojure
+                 clojure -- cljsjsReagent
+                 clojure -- reagentdetails
+}

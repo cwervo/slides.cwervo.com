@@ -1,0 +1,68 @@
+graph g {
+    bgcolor=transparent # RGBA (with alpha)
+        splines=true # use splines for edges, if needed to avoid overlap
+        overlap=scale # (try to) stretch everything if edges overlap
+
+        node [shape=circle,
+                fixedsize=true,
+                 width=2.5, # relative to the underlying coordinate grid?
+                 color="black", # node border color (X11 or HTML colors)
+                 fillcolor=white, # node fill color (X11 or HTML colors)
+                 style="filled,solid",
+                 fontcolor=black, # text color (X11 or HTML colors)
+                     fontname="helvetica",
+                     fontsize=20]
+
+                 edge [ penwidth=0.75, color=black ]
+
+                 // root
+                 root [label="cljsjs-aframe"]
+                 // right tree
+                 // l2
+                 cljsjs [label="CLJSJS"]
+                 // l3
+                 clojure [label="Clojure"]
+                 js [label="Javascript"]
+
+                 // left tree
+                 // l2
+                 aframe [label="A-Frame",
+                    fillcolor=gray]
+                 // l3
+                 components [label="custom JS markup",
+                    fillcolor=gray]
+
+                 webcomponents [label="web components",
+                    fillcolor=gray]
+
+
+
+                 root -- cljsjs
+                 cljsjs -- clojure
+                 cljsjs -- js
+
+                 root -- aframe
+                 aframe -- components
+                 aframe -- webcomponents
+}
+
+/* graph G { */
+/*     bgcolor="#ffffff00"; */
+/*     "cljsjs-aframe" -> CLJSJS; */
+/*     CLJSJS -> Clojure; */
+/*     CLJSJS -> Javascript; */
+/*     "cljsjs-aframe" -> "A-Frame"; */
+/*     "A-Frame" -> "custom HTML markup"; */
+/*     "A-Frame" -> "web components"; */
+/* } */
+
+
+/* graph G { */
+/*     bgcolor="#ffffff00"; */
+/*     "cljsjs-aframe" -> CLJSJS; */
+/*     CLJSJS -> Clojure; */
+/*     CLJSJS -> Javascript; */
+/*     "cljsjs-aframe" -> "A-Frame"; */
+/*     "A-Frame" -> "custom HTML markup"; */
+/*     "A-Frame" -> "web components"; */
+/* } */

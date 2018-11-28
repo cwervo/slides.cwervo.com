@@ -3,12 +3,166 @@ import { Image, Appear, Notes } from 'mdx-deck'
 import { SplitRight } from 'mdx-deck/layouts'
 import PresentButton from '../PresentButton'
 
+# VR & AR On The Web Using ClojureScript
+
+## Andrés Cuervo
+### Clojure/Conj 2018
+#### November 29, 2018
+
+---
+
+I'm an XR artist, software engineer, and HCI researcher.
+
+<img style={{height: '90vh'}} src="./assets/gif_collage.gif" />
+
+---
+
+<img style={{width: '100vw'}} src="./assets/aframe-cljsjs-commit.png" />
+
+---
+
+<img style={{width: '95vw'}} src="./assets/aframe-codepen-code.png" />
+
+[Codepen](https://codepen.io/mozillavr/pen/BjygdO)
+
+---
+
+<img style={{height: '101vh'}} src="./assets/aframe-codepen-demo.gif" />
+
+---
+
+<img style={{height: '101vh'}} src="./assets/aframe-src.gif" />
+
+---
+
+<img style={{height: '90vh'}} src="./assets/dot-graphs/tree.svg" />
+
+---
+
+<img style={{height: '90vh'}} src="./assets/dot-graphs/tree-grayed-out.svg" />
+
+---
+
+# First up: `CLJSJS`!
+
+---
+
+<!--
+CLJSJS exists to solve one problem: making it easy to get foreign-libs into Clojurescript!
+
+A `foreign lib` is anything that needs to be compiled alongside Clojurescript code.
+
+The most popular example is probably React in projects like Om or Reagent
+
+Let's say you have some Javascript like a simple calculator app
+-->
+
+<img style={{height: '85vh'}} src="./assets/dot-graphs/reagent-graph.svg" />
+
+---
+
+<img style={{height: '85vh'}} src="./assets/dot-graphs/reagent-cljsjs.svg" />
+
+---
+
+<!-- How do we go from foreign-lib to CLJSJS? -->
+
+## What do you need to create a `:foreign-lib`?
+
+<ul style={{fontSize: "4rem"}}>
+    <li>the development version of the library</li>
+    <li>the production version of the library</li>
+    <li>an externs file</li>
+</ul>
+
+---
+
+<img style={{width: '90vw'}} src="./assets/js-module-1.png" />
+
+(from [JavaScript Module Support (Alpha)](https://clojurescript.org/reference/javascript-module-support) )
+
+---
+
+<img style={{width: '90vw'}} src="./assets/js-module-2.png" />
+
+---
+
+<img style={{width: '90vw'}} src="./assets/js-module-3.png" />
+
+---
+
+<!-- A&#45;Frame does a lot of things, including: networking, webGL handling, polyfilling, normalizing device APIs, its own component system &#38; so much more ... all to give us webVR that works everywhere! -->
+<!--  -->
+<img style={{height: '101vh'}} src="./assets/aframe-features.png" />
+---
+
+# Externs are huge for complex libraries
+
+## 1,894 — react.ext.js
+## 24,956 — aframe.ext.js
+
+---
+
+<!-- So, I obviously didn't do this all by hand — I used a generator! David Nolen has done excellent work on externs inference & jmmk on Github has turned this into a simple to use extern generator! -->
+
+[`jmmk`'s externs generator](https://github.com/jmmk/javascript-externs-generator)
+
+<img style={{height: '90vh'}} src="./assets/generate_externs.gif" />
+
+---
+
+<!-- So that gets us all the way through CLJSJS, covering how to roll up Javascript & Clojurescript together via CLJSJS -->
+
+> `[cljsjs.aframe :as aframe]`
+<img style={{height: '85vh'}} src="./assets/aframe-src.gif" />
+
+---
+
+# Functional XR & the future!
+
+---
+
+<img style={{width: '100vw'}} src="./assets/reagent-hiccup.svg" />
+
+---
+
+<img style={{width: '100vw'}} src="./assets/ar-code.svg" />
+
+---
+
+# VR
+
+<img style={{height: '80vh'}} src="./assets/colored-spheres.png" />
+
+---
+
+# [`three.ar.js`](https://github.com/google-ar/three.ar.js)
+
+<img style={{height: '90vh'}} src="./assets/three.ar.js-demo.gif" />
+
+---
+
+# [`aframe-ar`](https://github.com/chenzlabs/aframe-ar) is A-Frame + three.ar.js
+
+```
+<a-scene ar>
+...
+</a-scene>
+```
+
+---
+<!-- And then the big reveal, of functional AR all using ClojureScript!  -->
+
+<img style={{height: '102vh'}} src="./assets/ar-spheres.gif" />
+
+---
+
 <div style={{fontSize: "5rem"}}>
 <h3>Thanks!</h3>
 <ul>
     <li><a style={{color: "black"}} href="https://twitter.com/acwervo">@acwervo</a></li>
     <li><a style={{color: "black"}} href="https://cwervo.com">cwervo.com</a></li>
     <li><a style={{color: "black"}} href="https://slides.cwervo.com">slides.cwervo.com</a></li>
-    <li><a style={{color: "black"}} href="https://slides.cwervo.com/mdx-slides/gray-area-slides/peer-critique-2/?mode=#0">slides for this talk</a></li>
+    <li><a style={{color: "black"}} href="https://github.com/AndresCuervo/testing-aframe-cljsjs">Example A-Frame + CLJSJS project</a></li>
 </ul>
 </div>
