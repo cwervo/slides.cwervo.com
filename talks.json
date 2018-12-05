@@ -3,6 +3,7 @@
         "VR & AR On The Web Using ClojureScript" : {
             "url": "./mdx-slides/clojure-vr-2018/?mode=#0",
             "date": "November 29",
+            "videoUrl": "https://www.youtube.com/watch?v=_0ewZlTPV3g",
             "description": "An overview of how I added A-Frame to [CLJSJS](https://github.com/cljsjs/packages), creating functional VR using ClojureScript, and the future of the Immersive Web & AR for this approach."
         },
         "Gray Area Incubator Artist Salon 2018.1" : {
