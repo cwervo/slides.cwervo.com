@@ -1,5 +1,10 @@
 {
     "2018" : {
+        "Lace (2018) + Some Stuff I've Been Thinking About" : {
+            "url": "./mdx-slides/webxr-2018-12-11/?mode=#0",
+            "date": "December 12",
+            "description": "Talking about my piece [Lace](https://cwervo.com/lace/index.html) (2018) and thoughts on distributed rendering using the web."
+        },
         "VR & AR On The Web Using ClojureScript" : {
             "url": "./mdx-slides/clojure-vr-2018/?mode=#0",
             "date": "November 29",
