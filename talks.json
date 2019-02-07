@@ -1,4 +1,16 @@
 {
+    "2019" : {
+        "JSConf Hawai'i" : {
+            "url": "./mdx-slides/jsconf-hawaii-2019",
+            "date": "February 07",
+            "description": "&lt; coming soon &gt;"
+        },
+        "Forward.js" : {
+            "url": "./mdx-slides/forward-js-2019/?mode=#0",
+            "date": "January 24",
+            "description": "&lt; coming soon &gt;"
+        }
+    },
     "2018" : {
         "Lace (2018) + Some Stuff I've Been Thinking About" : {
             "url": "./mdx-slides/webxr-2018-12-11/?mode=#0",
