@@ -1,5 +1,10 @@
 {
     "2019" : {
+        "CSS Conf EU" : {
+            "url": "/mdx-slides/css-conf-eu-2019/",
+            "date": "May 31",
+            "description": "A talk about the etymology of the word tag in HTML, going through SGML, XML, and the work of 1940's mathematician Emil Leon Post!"
+        },
         "JSConf Hawai'i" : {
             "url": "./mdx-slides/jsconf-hawaii-2019",
             "date": "February 07",
