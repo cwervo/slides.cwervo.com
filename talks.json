@@ -3,24 +3,25 @@
         "CSS Conf EU" : {
             "url": "/mdx-slides/css-conf-eu-2019/",
             "date": "May 31",
+            "videoUrl": "https://www.youtube.com/watch?v=oWwJA1QLItA",
             "description": "A talk about the etymology of the word tag in HTML, going through SGML, XML, and the work of 1940's mathematician Emil Leon Post!"
         },
         "JSConf Hawai'i" : {
             "url": "./mdx-slides/jsconf-hawaii-2019",
             "date": "February 07",
-            "description": "&lt; coming soon &gt;"
+            "description": "A look at the history of the immersive web, the current state of the immersive web (XR/AR/VR), and its future!"
         },
         "Forward.js" : {
             "url": "./mdx-slides/forward-js-2019/?mode=#0",
             "date": "January 24",
-            "description": "&lt; coming soon &gt;"
+            "description": "A talk about the creation &amp; user experience of my web VR art installation at JSConf EU 2018: _[Lace](https://cwervo.com/lace/index.html)_"
         }
     },
     "2018" : {
         "Lace (2018) + Some Stuff I've Been Thinking About" : {
             "url": "./mdx-slides/webxr-2018-12-11/?mode=#0",
             "date": "December 12",
-            "description": "Talking about my piece [Lace](https://cwervo.com/lace/index.html) (2018) and thoughts on distributed rendering using the web."
+            "description": "Talking about my piece _[Lace](https://cwervo.com/lace/index.html)_ (2018) and thoughts on distributed rendering using the web."
         },
         "VR & AR On The Web Using ClojureScript" : {
             "url": "./mdx-slides/clojure-vr-2018/?mode=#0",
