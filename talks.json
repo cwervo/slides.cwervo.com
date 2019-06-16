@@ -9,6 +9,7 @@
         "JSConf Hawai'i" : {
             "url": "./mdx-slides/jsconf-hawaii-2019",
             "date": "February 07",
+            "videoUrl": "https://www.youtube.com/watch?v=i8iylI6JDmc",
             "description": "A look at the history of the immersive web, the current state of the immersive web (XR/AR/VR), and its future!"
         },
         "Forward.js" : {
