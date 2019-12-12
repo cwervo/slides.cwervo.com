@@ -1,5 +1,10 @@
 {
     "2019" : {
+        "Node + JS Interactive" : {
+            "url": "https://slides.com/cwervo/njsi-2019#/",
+            "date": "December 12",
+            "description": "An overview of what WebXR is, the current WebXR ecosystem, & a bit about the future of it all."
+        },
         "CSS Conf EU" : {
             "url": "/mdx-slides/css-conf-eu-2019/",
             "date": "May 31",
