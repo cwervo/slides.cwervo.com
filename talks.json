@@ -1,8 +1,16 @@
 {
+    "2020" : {
+        "HalfStack Phoenix" : {
+            "url": "https://slides.com/cwervo/halfstack-2020",
+            "date": "January 17",
+            "description": "A walk through the creation of an AR brush using [WebAssembly](https://webassembly.org/) & [WebARonARKit](https://github.com/google-ar/WebARonARKit). I start off by explaining all the tech & end with what the future of this could look like!"
+        }
+    },
     "2019" : {
         "Node + JS Interactive" : {
             "url": "https://slides.com/cwervo/njsi-2019#/",
             "date": "December 12",
+            "videoUrl": "https://www.youtube.com/watch?v=l2TTKeaw2zY&list=PLfMzBWSH11xZPfWcC0DqFqKo_reMP58mw",
             "description": "An overview of what WebXR is, the current WebXR ecosystem, & a bit about the future of it all."
         },
         "CSS Conf EU" : {
