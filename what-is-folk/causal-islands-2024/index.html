@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Causal Islands 2024</title>
+    <script src="folk.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <!--
+    My intention:
+      - Have some basic HTML by default
+      - Have a script tag that loads folk.js
+      - When folk.js loads, it should replace the contents of the body with the current program that it sees
+        - e.g. `Claim presentation displays `<h1 class="big center">Causal Islands 2024</h1>`
+    -->
+<body>
+    <span id="status">Connection status</span> to <span id="folknameDisplay">folkname</span>
+    <!-- Hmmm, can you get SSID from JS???? Could maybe have an automatic switch -->
+    <select name="folkname" id="folkname">
+        <!-- <option value="localhost">localhost</option> -->
+        <option value="folk-cwe">folk-cwe</option>
+        <option value="folk0">folk0</option>
+        <option value="gadget-blue">gadget-blue</option>
+        <option value="gadget-red">gadget-red</option>
+    </select>
+
+    <div id="folk-container" class="debug">
+        <h1 class="big">Causal Islands 2024</h1>
+    </div>
+    <script src="bind.js"></script>
+</body>
+</html>

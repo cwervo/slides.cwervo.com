@@ -1,0 +1,16 @@
+body {
+    color: papayawhip;
+    background-color: MidnightBlue;
+    font-size: 14pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    margin: 2% 5%;
+}
+a { color: pink; }
+a:visited { color: magenta; }
+
+.big {
+    font-size: 42pt;
+}
+
+.debug, .debug > * { outline: 1px dashed gold }
