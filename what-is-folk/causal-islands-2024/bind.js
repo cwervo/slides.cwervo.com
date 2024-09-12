@@ -66,9 +66,3 @@ function watchAndReport(statement, reporterElement) {
 
     });
 }
-
-watchAndReport(tcl`${folkname} has html /html/`, programListEl);
-watchAndReport(tcl`${folkname} has program code /code/`, programListEl);
-watchAndReport(tcl`/page/ has region /r/`, programListEl);
-// Errors? In folk.js????
-// watchAndReport(tcl`/page/ has program code /code/`, programListEl);
