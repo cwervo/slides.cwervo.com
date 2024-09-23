@@ -16,7 +16,7 @@ programListEl.style = "font-family: monospace; white-space: pre-wrap;";
 function connectToFolkName(_folkname) {
     folkname = _folkname;
     folknameDisplayEl.innerText = folkname;
-    console.log("connecting to: " + folkname);
+    // console.log("connecting to: " + folkname);
 
     ws = new FolkWS(document.getElementById('status'),`http://${folkname}.local:4273/ws`);
 }
@@ -43,7 +43,7 @@ folknameEl.onchange = (changeEvent) => {
 function watchAndReport(statement, reporterElement) {
     // Parse statement for strings in foward slashes and pull out JSON keys in matches, accumalate and display that into the reporterElement
     let keysInStatement = statement.match(/\/([^\/]+)\//g).map(e => e.slice(1, -1))
-    console.log(keysInStatement)
+    // console.log(keysInStatement)
 
     ws.watchCollected(statement, matches => {
         let reportString = `${folkname} has ${matches.length} match${matches.length === 1 ? '' : 'es'} for [${statement}]:`
@@ -55,14 +55,13 @@ function watchAndReport(statement, reporterElement) {
 
         for (let i = 0; i < matches.length; i++) {
             let m = matches[i]
-            console.table(m)
+            // console.table(m)
             for (const key of keysInStatement) {
-                reportString += '\nMatch \n'
                 reportString += `   ${m[key]}`
             }
         }
 
         reporterElement.innerText = reportString
-
+        globalMatches = matches
     });
 }

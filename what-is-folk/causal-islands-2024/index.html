@@ -19,10 +19,10 @@
     <!-- Hmmm, can you get SSID from JS???? Could maybe have an automatic switch -->
     <select name="folkname" id="folkname">
         <!-- <option value="localhost">localhost</option> -->
+        <option value="gadget-red">gadget-red</option>
         <option value="folk-cwe">folk-cwe</option>
         <option value="folk0">folk0</option>
         <option value="gadget-blue">gadget-blue</option>
-        <option value="gadget-red">gadget-red</option>
     </select>
 
     <div id="folk-container" class="debug">
@@ -30,37 +30,6 @@
     </div>
 
     <script src="bind.js"></script>
-    <script>
-        // watchAndReport(tcl`${folkname} has html /html/`, programListEl);
-        // watchAndReport(tcl`${folkname} has program code /code/`, programListEl);
-        // watchAndReport(tcl`/page/ has region /r/`, programListEl);
-        watchAndReport(tcl`${folkname} displays slide /n/ with data /data/`, programListEl);
-
-        /*
-        // Prototype Folk code to integrate with the above:
-        Wish $this is outlined gold
-
-        set folkname [info hostname]
-
-        When $this has region /r/ {
-            Claim $folkname has html "<h2>Blah</h2>\n<pre>some example code</pre>"
-            Claim $folkname has angle [region angle $r]
-        }
-
-
-        When $folkname has angle /angle/ {
-            Wish $this is labelled "angle: $angle"
-        }
-
-        When /page/ claims I'm slide /n/ & /page/ has region /r/ {
-            set center [region centroid $r]
-            set data [dict create center $center width [region width $r] height [region height $r]]
-            Claim $folkname displays slide $n with data $data
-            Wish $this is labelled "Slide $n: "
-        }
-        */
-        // Errors? In folk.js????
-        // watchAndReport(tcl`/page/ has program code /code/`, programListEl);
-    </script>
+    <script src="makeSlides.js"></script>
 </body>
 </html>

@@ -1,13 +1,20 @@
 body {
     color: papayawhip;
     background-color: MidnightBlue;
-    font-size: 14pt;
+    font-size: 23pt;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5;
     margin: 2% 5%;
 }
 a { color: pink; }
 a:visited { color: magenta; }
+
+h2 {
+    font-size: 36pt;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
 
 .big {
     font-size: 42pt;
