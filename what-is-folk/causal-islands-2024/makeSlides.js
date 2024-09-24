@@ -1,6 +1,9 @@
 // From $Display::WIDTH & $Display::HEIGHT on gadget-red
-const WIDTH = 1280
-const HEIGHT = 720
+// const WIDTH = 1280
+// const HEIGHT = 720
+// From $Display::WIDTH & $Display::HEIGHT on folk0
+const WIDTH = 3840
+const HEIGHT = 2160
 
 // Use the function with your data
 let data = {
@@ -27,6 +30,18 @@ let el = document.getElementById("folk-container");
 console.log("el", el);
 el.innerHTML = html;
 
+function radianToCssDegree(radian) {
+    console.log('radian: ', radian)
+    // Convert radian to degree
+    const degree = radian * (180 / Math.PI);
+    
+    // Round to 2 decimal places
+    const roundedDegree = Math.round(degree * 100) / 100;
+    
+    // Return the CSS-ready string
+    return `${roundedDegree}deg`;
+}
+
 // Function to create and append a 3D rotated element
 function create3DElement(data) {
   // Create a new div element
@@ -43,18 +58,21 @@ function create3DElement(data) {
   element.classList.add("folkSlide");
   element.style.left = `${left}px`;
   element.style.top = `${top}px`;
-  element.style.width = `${data.width}px`;
-  element.style.height = `${data.height}px`;
+  element.style.width = `${data.width * viewportWidth}px`;
+  element.style.height = `${data.height * viewportHeight}px`;
   element.style.backgroundColor = "papayawhip"; // You can change this color
   element.style.color = "MidnightBlue"; // You can change this color
   element.style.border = "1px solid black";
 
   // Apply 3D transformation
-  element.style.transform = `perspective(1000px) rotateX(${data.angleZ}deg)`;
+  // TODO: Uhhhhhh, angle is undefined??? hmmmm
+  let deg = radianToCssDegree(data.angle);
+  console.log('deg: ', data.angle)
+  element.style.transform = `perspective(1000px) rotateX(${deg}deg)`;
   element.style.transformOrigin = "center center";
 
   // Add some text to the element (optional)
-  element.innerHTML = "<h2>Tilted Element</h2>";
+  element.innerHTML = `<h2>I'm slide #${data.n}</h2>`;
 
   // Append the element to the body
   document.body.appendChild(element);
@@ -104,25 +122,28 @@ function parseGlobalMatches(globalMatches) {
 }
 
 function repeatOften() {
+    console.log('....')
   if (typeof globalMatches !== "undefined") {
     const parsedMatches = parseGlobalMatches(globalMatches);
-    // console.log(JSON.stringify(parsedMatches, null, 2));
+        // console.log('parsedMatches: ', parsedMatches)
+    if (parsedMatches.length > 0) {
+        // console.log(JSON.stringify(parsedMatches, null, 2));
+        let newData = parsedMatches[0]
+        newData.center = [newData.center.x / WIDTH, newData.center.y / HEIGHT]
+        newData.width = newData.width / WIDTH
+        newData.height = newData.height / HEIGHT
+        newData.n = globalMatches[0]['n'];
+        newData.angle = globalMatches[0]['angle'];
 
-    /*
-        center	345	319.5	
-        width			456
-        height			405
-    */
-    let newData = parsedMatches[0]
-    newData.center = [newData.center.x / WIDTH, newData.center.y / HEIGHT]
-    newData.angleZ = 0
-    console.table(newData)
-    if (document.querySelector(".folkSlide")) {
-        document.querySelector(".folkSlide").remove()
+        // newData.angleZ = 0
+        console.table(globalMatches[0].data)
+        if (document.querySelector(".folkSlide")) {
+            document.querySelector(".folkSlide").remove()
+        }
+        create3DElement(newData)
     }
-    create3DElement(newData)
   }
-  console.log("repeating");
+//   console.log("repeating");
   // Do whatever
   requestAnimationFrame(repeatOften);
 }
@@ -137,24 +158,5 @@ Wish $this displays html "<h2>helllooooo</h2>"
 
 /*
 # Prototype Folk code to integrate with the above:
-Wish $this is outlined gold
-
-set folkname [info hostname]
-
-When $this has region /r/ {
-    Claim $folkname has html "<h2>Blah</h2>\n<pre>some example code</pre>"
-    Claim $folkname has angle [region angle $r]
-}
-
-When $folkname has angle /angle/ {
-    Wish $this is labelled "angle: $angle"
-}
-
-When /page/ claims I'm slide /n/ & /page/ has region /r/ {
-    set center [region centroid $r]
-    set data [dict create center $center width [region width $r] height [region height $r]]
-    Claim $folkname displays slide $n with data $data
-    Wish $this is labelled "Slide $n: "
-}
-Claim I'm slide 1
+- ./slides.folk
 */
