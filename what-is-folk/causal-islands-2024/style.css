@@ -8,6 +8,10 @@ body {
     margin: 2% 5%;
 }
 
+#folk-container {
+    margin: 3% 8%;
+}
+
 a { color: pink; }
 a:visited { color: magenta; }
 

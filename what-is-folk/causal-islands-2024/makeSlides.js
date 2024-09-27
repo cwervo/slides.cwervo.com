@@ -431,6 +431,20 @@ function displayDrawnSlides(n = 1) {
 }
 // displayDrawnSlides(12);
 
+function toggleFullscreen() {
+  let elem = document.body;
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(
+        `Error attempting to enable fullscreen mode: ${err.message} (${err.name})`,
+      );
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}
+
 document.body.addEventListener("keydown", (event) => {
   if (event.key === "ArrowRight") {
     slideNumber += 1;
@@ -438,5 +452,7 @@ document.body.addEventListener("keydown", (event) => {
     slideNumber -= 1;
   } else if (event.key === "9") {
     slideNumber = 36;
+  } else if (event.key === "f") {
+    toggleFullscreen();
   }
 })
