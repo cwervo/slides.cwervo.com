@@ -2,6 +2,8 @@ Wish $this is outlined gold
 
 set folkname [info hostname]
 
+# TODO: quads?? Look @ tags-to-quads.folk
+# - Could maybe convert quads to camera space
 When $this has region /r/ {
     Claim $folkname has html "<h2>Blah</h2>\n<pre>some example code</pre>"
     Claim $folkname has angle [region angle $r]
@@ -19,4 +21,4 @@ When /page/ claims I'm slide /n/ & /page/ has region /r/ {
     Claim $folkname displays slide $n with data $data
     Wish $this is labelled "Slide $n: "
 }
-Claim I'm slide 1
+# Claim I'm slide 1

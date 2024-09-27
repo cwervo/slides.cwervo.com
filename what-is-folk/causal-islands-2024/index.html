@@ -15,21 +15,24 @@
         - e.g. `Claim presentation displays `<h1 class="big center">Causal Islands 2024</h1>`
     -->
 <body>
-    <span id="status">Connection status</span> to <span id="folknameDisplay">folkname</span>
-    <!-- Hmmm, can you get SSID from JS???? Could maybe have an automatic switch -->
-    <select name="folkname" id="folkname">
-        <!-- <option value="localhost">localhost</option> -->
-        <option value="gadget-red">gadget-red</option>
-        <option value="folk0">folk0</option>
-        <option value="folk-cwe">folk-cwe</option>
-        <option value="gadget-blue">gadget-blue</option>
-    </select>
+    <span style="display: none;">
+        <span id="status">Connection status</span> to <span id="folknameDisplay">folkname</span>
+        <!-- Hmmm, can you get SSID from JS???? Could maybe have an automatic switch -->
+        <select name="folkname" id="folkname">
+            <!-- <option value="localhost">localhost</option> -->
+            <option value="gadget-red">gadget-red</option>
+            <option value="folk0">folk0</option>
+            <option value="folk-cwe">folk-cwe</option>
+            <option value="gadget-blue">gadget-blue</option>
+        </select>
+    </span>
 
     <div id="folk-container" class="debug">
-        <h1 class="big">Causal Islands 2024</h1>
+        <!-- <h1 class="big">Causal Islands 2024</h1> -->
     </div>
 
     <script src="bind.js"></script>
+    <!-- <script src="mockGlobalMatches.js"></script> -->
     <script src="makeSlides.js"></script>
 </body>
 </html>
