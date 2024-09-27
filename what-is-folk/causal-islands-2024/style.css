@@ -11,6 +11,10 @@ body {
 a { color: pink; }
 a:visited { color: magenta; }
 
+a {
+    font-size: 12pt;
+}
+
 h2 {
     font-size: 36pt;
     font-weight: bold;

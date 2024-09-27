@@ -39,7 +39,7 @@ function watchAndReport(statement, reporterElement) {
 
         if (matches.length === 0) {
             globalMatches = []
-            reporterElement.innerText = reportString
+            // reporterElement.innerText = reportString
             return
         }
 
@@ -50,7 +50,7 @@ function watchAndReport(statement, reporterElement) {
                 reportString += `   ${m[key]}`
             }
         }
-        reporterElement.innerText = reportString
+        // reporterElement.innerText = reportString
         globalMatches = matches
     });
 }
