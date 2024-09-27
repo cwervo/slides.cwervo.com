@@ -38,6 +38,7 @@ function watchAndReport(statement, reporterElement) {
         let reportString = `${folkname} has ${matches.length} match${matches.length === 1 ? '' : 'es'} for [${statement}]:`
 
         if (matches.length === 0) {
+            globalMatches = []
             reporterElement.innerText = reportString
             return
         }
@@ -49,7 +50,7 @@ function watchAndReport(statement, reporterElement) {
                 reportString += `   ${m[key]}`
             }
         }
-        // reporterElement.innerText = reportString
+        reporterElement.innerText = reportString
         globalMatches = matches
     });
 }

@@ -38,12 +38,11 @@ function radianToCssDegree(radian) {
 function createFolkCard(data) {
   // Create a new div element
   const element = document.createElement("div");
-
   // Calculate position based on viewport size
   const viewportWidth = window.innerWidth;
   const viewportHeight = window.innerHeight;
-  const left = (data.center[0] * viewportWidth) - (data.width / 2);
-  const top = (data.center[1] * viewportHeight) - (data.height / 2);
+  const left = (data.center[0] * viewportWidth) - (viewportWidth / 2);
+  const top = (data.center[1] * viewportHeight) - (viewportHeight / 2);
 
   // Set the element's style
   element.style.position = "absolute";
@@ -66,7 +65,8 @@ function createFolkCard(data) {
   // element.style.transformOrigin = "bottom right";
 
   // Add some text to the element (optional)
-  element.innerHTML = `<h2>I'm slide #${data}</h2>`;
+  // element.innerHTML = `<h2>I'm slide #${data.n}</h2>`;
+  element.innerHTML = `<h2>I'm slide #${data.n}</h2>`;
 
   // Append the element to the body
   // document.body.appendChild(element);
@@ -99,13 +99,16 @@ function parseGlobalMatches(globalMatches) {
   return result;
 }
 
-function repeatOften() {
+function loop() {
   if (typeof globalMatches !== "undefined") {
     const parsedMatches = parseGlobalMatches(globalMatches);
-        if (document.querySelector(".folkSlide")) {
-          document.querySelector(".folkSlide").remove()
-        }
+    if (document.querySelector(".folkSlide")) {
+      document.querySelector(".folkSlide").remove()
+      console.log("removed")
+    }
+
     if (parsedMatches.length > 0) {
+        console.log('creating new slide, parsedMatches:', parsedMatches)
         let newData = parsedMatches[0]
         newData.center = [newData.center.x / WIDTH, newData.center.y / HEIGHT]
         newData.width = newData.width / WIDTH
@@ -113,13 +116,12 @@ function repeatOften() {
         newData.n = globalMatches[0]['n'];
 
         createFolkCard(newData)
-    } else {
-      globalMatches = []
+        globalMatches = undefined
     }
   }
-  requestAnimationFrame(repeatOften);
+  requestAnimationFrame(loop);
 }
-requestAnimationFrame(repeatOften);
+requestAnimationFrame(loop);
 
 function createElementWithText(tag, text) {
   const element = document.createElement(tag);
@@ -144,15 +146,13 @@ function displaySlide(n = 0) {
       break;
     case 2:
       console.log('hello')
-      slide = displayDrawnSlides(15);
+      // slide = displayDrawnSlides(15);
       break;
     default:
       break;
   }
   containerEl.appendChild(slide)
 }
-
-displaySlide(2)
 
 function displayDrawnSlides(n = 1) {
   // n = number of slides to stack and display
@@ -171,4 +171,5 @@ function displayDrawnSlides(n = 1) {
   return imageContainer;
 }
 
+displaySlide(2)
 // displayDrawnSlides(12);
