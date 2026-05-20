@@ -122,6 +122,7 @@ function loop() {
       newData.width = newData.width / WIDTH;
       newData.height = newData.height / HEIGHT;
       newData.n = globalMatches[0]["n"];
+      console.log("newData n: ", newData.n);
 
       slideNumber = newData.n;
 
